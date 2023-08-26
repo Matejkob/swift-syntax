@@ -115,7 +115,7 @@ public func failStringsEqualWithDiff(
 
     while expectedLine < expectedLines.count || actualLine < actualLines.count {
       if let removal = removals[expectedLine] {
-        result += "–\(removal)\n"
+        result += "-\(removal)\n"
         expectedLine += 1
       } else if let insertion = insertions[actualLine] {
         result += "+\(insertion)\n"

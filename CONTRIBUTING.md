@@ -3,7 +3,12 @@
 ## Building & Testing
 
 > [!NOTE]  
-> Highlights information that users should take into account, even when skimming.
+> 💡 Tip: Running swift-syntax’s self-parse tests takes the majority of testing time. If you want to iterate quickly, you can skip these tests:
+> - In Xcode
+>   1. Product -> Scheme -> Edit Scheme…
+>   2. Select the Arguments tab in the Run section
+>   3. Add a `SKIP_LONG_TESTS` environment variable with value `1`
+> - On the command line: Set the `SKIP_LONG_TESTS` environment variable to `1` when running tests, e.g by running `SKIP_LONG_TESTS=1 swift test`
 
 > [!IMPORTANT]  
 > Crucial information necessary for users to succeed.
@@ -13,12 +18,7 @@
 
 swift-syntax is a SwiftPM package, so you can build and test it using anything that supports packages - opening in Xcode, Visual Studio Code with [Swift for Visual Studio Code](https://github.com/swift-server/vscode-swift) installed, or through the command line using `swift build` and `swift test`.
 
-> 💡 Tip: Running swift-syntax’s self-parse tests takes the majority of testing time. If you want to iterate quickly, you can skip these tests:
-> - In Xcode
->   1. Product -> Scheme -> Edit Scheme…
->   2. Select the Arguments tab in the Run section
->   3. Add a `SKIP_LONG_TESTS` environment variable with value `1`
-> - On the command line: Set the `SKIP_LONG_TESTS` environment variable to `1` when running tests, e.g by running `SKIP_LONG_TESTS=1 swift test`
+
 
 > 💡 Tip: If you are only modifying the `SwiftParser` module, you can run only the parser tests by selecting the `SwiftParserTest` target. 
 > - In Xcode: Select the `SwiftParserTest` scheme. If you can’t find it in your Schemes, you need to manually add it using Product -> Scheme -> New Scheme…

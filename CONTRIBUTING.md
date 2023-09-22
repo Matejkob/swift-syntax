@@ -2,6 +2,15 @@
 
 ## Building & Testing
 
+> [!NOTE]  
+> Highlights information that users should take into account, even when skimming.
+
+> [!IMPORTANT]  
+> Crucial information necessary for users to succeed.
+
+> [!WARNING]  
+> Critical content demanding immediate user attention due to potential risks.
+
 swift-syntax is a SwiftPM package, so you can build and test it using anything that supports packages - opening in Xcode, Visual Studio Code with [Swift for Visual Studio Code](https://github.com/swift-server/vscode-swift) installed, or through the command line using `swift build` and `swift test`.
 
 > 💡 Tip: Running swift-syntax’s self-parse tests takes the majority of testing time. If you want to iterate quickly, you can skip these tests:
